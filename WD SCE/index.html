@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-size, initial-scale=1.0">
+        <title>
+            WAGMI - Another Social Website
+        </title>
+    </head>
+
+    <!--------------------------ICONSCOUT CDN---------------------------->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+    <!----------------------STYLESHEET-------------------------->
+    <link rel="stylesheet" href="./style.css">
+
+    <body>
+        <nav>
+            <div class="container">
+                <h2 class="logo">
+                    WAGMI
+                </h2>
+
+                <div class="search-bar">
+                    <i class="uil uil-search"></i>
+                    <input type="search" placeholder="Search for your friends and family">
+                </div>
+
+                <div class="create">
+                    <label class="btn btn-primary" for="create-post">Create</label>
+                    <div class="profile-picture">
+                        <img src="./Images/photo_2022-01-24_13-10-43.jpg">
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!----------------------------------------Main ----------------------------->
+        <main>
+            <div class="container">
+
+                <!--------------------------------Left side-------------------------->
+                <div class="left">
+                    <a class="profile">
+                        <div class="profile-picture">
+                            <img src="./Images/photo_2022-01-24_13-10-43.jpg">
+                        </div>
+                        <div class="handle">
+                            <h4>Aditya Joshi</h4>
+                            <p class="text-muted">
+                                @adityajoshi
+                            </p>
+                        </div>
+
+                        <!---------------------Profile Popup--------------------->
+                        <div class="profile-popup">
+                            <div class="profile-picture">
+                                <img src="./Images/photo_2022-01-24_13-10-43.jpg">
+                            </div>
+
+                            <div class="handle">
+                                <h4>Aditya Joshi</h4>
+                                <p class="text-muted">
+                                    @adityajoshi
+                                </p>
+                            </div>
+                            <div class="location">
+                                    From <b>Pune, India</b>
+                            </div>
+                            <div class="joined">
+                                <p class="text-muted">
+                                    Joined April 2022
+                                </p>
+                            </div>
+                            <div class="stats">
+                                    <p><b>40</b> following <b>1M</b> followers</p>
+                            </div>
+                        </div>
+                    </a>
+                
+
+                    <!-------------------------Side Bar-------------------------->
+                    <div class="sidebar">
+                        <a class="menu-item active">
+                            <span><i class="uil uil-home"></i></span><h3>Home</h3>
+                        </a>
+                        <a class="menu-item" id="explore">
+                            <span><i class="uil uil-compass"></i></span><h3>Discover</h3>
+                        </a>
+                        <a class="menu-item" id="notifications">
+                            <span><i class="uil uil-bell">
+                                <small class="notification-count">6</small>
+                            </i></span><h3>Notifications</h3>
+                        
+                            <!---------------------------------Popup------------------------>
+                            <div class="notifications-popup">
+                                <div>
+                                    <div class="profile-picture">
+                                        <img src="./Images/Lokesh.jpg">
+                                    </div>
+                                    <div class="notification-body">
+                                        <b>Lokesh Gaikwad</b> sent a post by Naval
+                                        <small class="text-muted">3 hrs ago</small>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="profile-picture">
+                                        <img src="./Images/vivek.jpg">
+                                    </div>
+                                    <div class="notification-body">
+                                        <b>Vivek Joshi</b> shared a photo
+                                        <small class="text-muted">5 hrs ago</small>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="profile-picture">
+                                        <img src="Images/Uddhav Joshi.jpg">
+                                    </div>
+                                    <div class="notification-body">
+                                        <b>Uddhav Joshi</b> liked your post
+                                        <small class="text-muted">7 hrs ago</small>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="profile-picture">
+                                        <img src="./Images/aai.jpg">
+                                    </div>
+                                    <div class="notification-body">
+                                        <b>Pratibha Joshi</b> liked your post
+                                        <small class="text-muted">7 hrs ago</small>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="profile-picture">
+                                        <img src="./Images/mama.jpg">
+                                    </div>
+                                    <div class="notification-body">
+                                        <b>Pramod Pingale</b> commented on your post
+                                        <small class="text-muted">7 hrs ago</small>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="profile-picture">
+                                        <img src="./Images/tech.png">
+                                    </div>
+                                    <div class="notification-body">
+                                        <b>Confused Soul</b> followed you
+                                        <small class="text-muted">10 hrs ago</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!--------------------------Notification Popup End---------------------->
+                        <a class="menu-item" id="messages-notifications">
+                            <span><i class="uil uil-envelope-alt">
+                                <small class="notification-count">5</small>
+                            </i></span><h3>Messages</h3>
+                        </a>
+                        
+                        <a class="menu-item" id="theme">
+                            <span><i class="uil uil-palette"></i></span><h3>Theme</h3>
+
+                            <!--------------------Theme Popup--------------------------------->
+                            <div class="theme-popup">
+                                <div>
+                                    <div class="light-theme" id="theme-light">
+                                        <b>Light</b>
+                                        <span><i class="uil uil-sun"></i></span>
+                                    </div>
+
+                                    <div class="dark-theme" id="theme-dark">
+                                        <b>Dark</b>
+                                        <span><i class="uil uil-moon"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-------------------Popup End ------------------------------>
+                        </a>
+                        <a class="menu-item">
+                            <span><i class="uil uil-setting"></i></span><h3>Settings</h3>
+                        </a>
+
+                        <!----------------------------Button on left side----------------->
+                        <label for="create-post" class="btn btn-primary">Create Post</label>
+                    </div>
+
+                </div>
+
+                <!-------------------------Left Column ENDED-------------------------------->
+
+
+                <!-----------------------------------Middle---------------------------- -->
+                <div class="middle">
+                    <!------------------------------STORIES-------------------------------->
+                    <div class="stories">
+                        <div class="story">
+                            <div class="profile-picture">
+                                <img src="./Images/photo_2022-01-24_13-10-43.jpg">
+                            </div>
+                            <p class="name">Your story</p>
+                        </div>
+
+                        <div class="story">
+                            <div class="profile-picture">
+                                <img src="./Images/Uddhav Joshi.jpg">
+                            </div>
+                            <p class="name">Uddhav Joshi</p>
+                        </div>
+
+                        <div class="story">
+                            <div class="profile-picture">
+                                <img src="./Images/mama.jpg">
+                            </div>
+                            <p class="name">Pramod Pingale</p>
+                        </div>
+
+                        <div class="story">
+                            <div class="profile-picture">
+                                <img src="./Images/Lokesh.jpg">
+                            </div>
+                            <p class="name">Lokesh Gaikwad</p>
+                        </div>
+
+                        <div class="story">
+                            <div class="profile-picture">
+                                <img src="./Images/aai.jpg">
+                            </div>
+                            <p class="name">Pratibha Joshi</p>
+                        </div>
+                    </div>
+                    <!----- ---------------------STORIES END------------------------->
+
+                    <!-----------------------CREATE POST------------------->
+                    <form class="create-post">
+                        <div class="profile-picture">
+                            <img src="./Images/photo_2022-01-24_13-10-43.jpg">
+                        </div>
+                        <input type="text" placeholder="How d, Aditya?" id="create-post">
+                        <input type="submit" value="Post" class="btn btn-primary">
+                    </form>
+
+                    <!------------------------CREATE POST END----------------------->
+
+                    <!-----------------------FEED-------------------------->
+                    <div class="feeds">
+
+                        <!---------------------Post 1--------------------------->
+                        <div class="feed">
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile-picture">
+                                        <img src="./Images/Lokesh.jpg">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Lokesh Gaikwad</h3>
+                                        <small>10 mins ago</small>
+                                    </div>
+                                    
+                                </div>
+
+                                <span class="edit">
+                                    <i class="uil uil-ellipsis-h"></i>
+                                </span>
+                            </div>
+
+                            <div class="photo">
+                                <img src="./Images/Post-1.png">
+                            </div>
+
+                            <div class="action-button">
+                                <div class="interaction-buttons">
+                                    <span><i class="uil uil-heart"></i></span>
+                                    <span><i class="uil uil-comment-dots"></i></span>
+                                    <span><i class="uil uil-share-alt"></i></span>
+                                </div>
+                                <div class="bookmark">
+                                    <span><i class="uil uil-bookmark-full"></i></span>
+                                </div>
+                            </div>
+
+                            <div class="liked-by">
+                                <span><img src="./Images/aai.jpg"></span>
+                                <span><img src="./Images/mama.jpg"></span>
+                                <span><img src="./Images/vivek.jpg"></span>
+                                <p>Liked by <b>Vivek Joshi</b> and <b>420 others.</b></p>
+                            </div>
+
+                            <div class="caption">
+                                <p><b>Lokesh Gaikwad</b> The purpose of life is to get better everyday.</p>
+                            </div>
+
+                            <div class="comments text-muted">
+                                View all 101 comments
+                            </div>
+                        </div>
+
+                         <!---------------------Post 2--------------------------->
+                         <div class="feed">
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile-picture">
+                                        <img src="./Images/vivek.jpg">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Vivek Joshi</h3>
+                                        <small>23 mins ago</small>
+                                    </div>
+                                    
+                                </div>
+
+                                <span class="edit">
+                                    <i class="uil uil-ellipsis-h"></i>
+                                </span>
+                            </div>
+
+                            <div class="photo">
+                                <img src="./Images/Post-6.jpg">
+                            </div>
+
+                            <div class="action-button">
+                                <div class="interaction-buttons">
+                                    <span><i class="uil uil-heart"></i></span>
+                                    <span><i class="uil uil-comment-dots"></i></span>
+                                    <span><i class="uil uil-share-alt"></i></span>
+                                </div>
+                                <div class="bookmark">
+                                    <span><i class="uil uil-bookmark-full"></i></span>
+                                </div>
+                            </div>
+
+                            <div class="liked-by">
+                                <span><img src="./Images/Lokesh.jpg"></span>
+                                <span><img src="./Images/mama.jpg"></span>
+                                <span><img src="./Images/Uddhav Joshi.jpg"></span>
+                                <p>Liked by <b>Uddhav Joshi</b> and <b>1013 others.</b></p>
+                            </div>
+
+                            <div class="caption">
+                                <p><b>Vivek Joshi</b> The one with my big bro!</p>
+                            </div>
+
+                            <div class="comments text-muted">
+                                View all 434 comments
+                            </div>
+                        </div>
+
+                         <!---------------------Post 3--------------------------->
+                         <div class="feed">
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile-picture">
+                                        <img src="./Images/aai.jpg">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Pratibha Joshi</h3>
+                                        <small>1 hr ago</small>
+                                    </div>
+                                    
+                                </div>
+
+                                <span class="edit">
+                                    <i class="uil uil-ellipsis-h"></i>
+                                </span>
+                            </div>
+
+                            <div class="photo">
+                                <img src="./Images/post-3.jpg">
+                            </div>
+
+                            <div class="action-button">
+                                <div class="interaction-buttons">
+                                    <span><i class="uil uil-heart"></i></span>
+                                    <span><i class="uil uil-comment-dots"></i></span>
+                                    <span><i class="uil uil-share-alt"></i></span>
+                                </div>
+                                <div class="bookmark">
+                                    <span><i class="uil uil-bookmark-full"></i></span>
+                                </div>
+                            </div>
+
+                            <div class="liked-by">
+                                <span><img src="./Images/mama.jpg"></span>
+                                <span><img src="./Images/vivek.jpg"></span>
+                                <span><img src="./Images/photo_2022-01-24_13-10-43.jpg"></span>
+                                <p>Liked by <b>Aditya Joshi</b> and <b>2553 others.</b></p>
+                            </div>
+
+                            <div class="caption">
+                                <p><b>Pratibha Joshi</b> Family is everything.</p>
+                            </div>
+
+                            <div class="comments text-muted">
+                                View all 578 comments
+                            </div>
+                        </div>
+
+                         <!---------------------Post 4--------------------------->
+                         <div class="feed">
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile-picture">
+                                        <img src="./Images/mama.jpg">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Pramod Pingale</h3>
+                                        <small>3 hrs ago</small>
+                                    </div>
+                                    
+                                </div>
+
+                                <span class="edit">
+                                    <i class="uil uil-ellipsis-h"></i>
+                                </span>
+                            </div>
+
+                            <div class="photo">
+                                <img src="./Images/post-4.jpg">
+                            </div>
+
+                            <div class="action-button">
+                                <div class="interaction-buttons">
+                                    <span><i class="uil uil-heart"></i></span>
+                                    <span><i class="uil uil-comment-dots"></i></span>
+                                    <span><i class="uil uil-share-alt"></i></span>
+                                </div>
+                                <div class="bookmark">
+                                    <span><i class="uil uil-bookmark-full"></i></span>
+                                </div>
+                            </div>
+
+                            <div class="liked-by">
+                                <span><img src="./Images/aai.jpg"></span>
+                                <span><img src="./Images/Uddhav Joshi.jpg"></span>
+                                <span><img src="./Images/vivek.jpg"></span>
+                                <p>Liked by <b>Vivek Joshi</b> and <b>498 others.</b></p>
+                            </div>
+
+                            <div class="caption">
+                                <p><b>Pramod Pingale</b> Ponder upon that.</p>
+                            </div>
+
+                            <div class="comments text-muted">
+                                View all 230 comments
+                            </div>
+                        </div>
+
+                         <!---------------------Post 5--------------------------->
+                         <div class="feed">
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile-picture">
+                                        <img src="./Images/Uddhav Joshi.jpg">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Uddhav Joshi</h3>
+                                        <small>5 hrs ago</small>
+                                    </div>
+                                    
+                                </div>
+
+                                <span class="edit">
+                                    <i class="uil uil-ellipsis-h"></i>
+                                </span>
+                            </div>
+
+                            <div class="photo">
+                                <img src="./Images/Uddhav Joshi.jpg">
+                            </div>
+
+                            <div class="action-button">
+                                <div class="interaction-buttons">
+                                    <span><i class="uil uil-heart"></i></span>
+                                    <span><i class="uil uil-comment-dots"></i></span>
+                                    <span><i class="uil uil-share-alt"></i></span>
+                                </div>
+                                <div class="bookmark">
+                                    <span><i class="uil uil-bookmark-full"></i></span>
+                                </div>
+                            </div>
+
+                            <div class="liked-by">
+                                <span><img src="./Images/aai.jpg"></span>
+                                <span><img src="./Images/mama.jpg"></span>
+                                <span><img src="./Images/vivek.jpg"></span>
+                                <p>Liked by <b>Vivek Joshi</b> and <b>42000 others.</b></p>
+                            </div>
+
+                            <div class="caption">
+                                <p><b>Uddhav Joshi</b> A journey towards victory.</p>
+                            </div>
+
+                            <div class="comments text-muted">
+                                View all 1013 comments
+                            </div>
+                        </div>
+
+                         <!---------------------Post 6--------------------------->
+                         <div class="feed">
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile-picture">
+                                        <img src="./Images/photo_2022-01-24_13-10-43.jpg">
+                                    </div>
+                                    <div class="info">
+                                        <h3>You</h3>
+                                        <small>10 hrs ago</small>
+                                    </div>
+                                    
+                                </div>
+
+                                <span class="edit">
+                                    <i class="uil uil-ellipsis-h"></i>
+                                </span>
+                            </div>
+
+                            <div class="photo">
+                                <img src="./Images/Post-5.jpg">
+                            </div>
+
+                            <div class="action-button">
+                                <div class="interaction-buttons">
+                                    <span><i class="uil uil-heart"></i></span>
+                                    <span><i class="uil uil-comment-dots"></i></span>
+                                    <span><i class="uil uil-share-alt"></i></span>
+                                </div>
+                                <div class="bookmark">
+                                    <span><i class="uil uil-bookmark-full"></i></span>
+                                </div>
+                            </div>
+
+                            <div class="liked-by">
+                                <span><img src="./Images/aai.jpg"></span>
+                                <span><img src="./Images/Lokesh.jpg"></span>
+                                <span><img src="./Images/vivek.jpg"></span>
+                                <p>Liked by <b>Vivek Joshi</b> and <b>1507 others.</b></p>
+                            </div>
+
+                            <div class="caption">
+                                <p><b>Aditya Joshi</b> and the mango season begins.....</p>
+                            </div>
+
+                            <div class="comments text-muted">
+                                View all 539 comments
+                            </div>
+                        </div>
+                    </div>
+
+                    <!----------------------END OF FEED------------------------>
+                </div>
+                <!---------------------------END IF MIDDLE COLUMN-------------------------->
+
+
+                <!---------------------------Right side--------------------------------->
+                <div class="right">
+                    <div class="messages">
+                        <div class="heading">
+                            <h4>Messages</h4><i class="uil uil-edit"></i>
+                        </div>
+
+                        <!------------------Search BAr---------------------->
+                        <div class="search-bar">
+                            <i class="uil uil-search"></i>
+                            <input type="search" placeholder="Search messages" id="message-search">
+                        </div>
+
+                        <!-------------------Messages category---------------------->
+                        <div class="category">
+                            <h6 class="active">Primary</h6>
+                            <h6>Groups</h6>
+                            <h6 class="message-requests">Requests(9+)</h6>
+                        </div>
+
+                        <!-------------------MESSAGE-1---------------------------------->
+                        <div class="message">
+                            <div class="profile-picture">
+                                <img src="./Images/Lokesh.jpg">
+                                <div class="active"></div>
+                            </div>
+
+                            <div class="message-body">
+                                <h5>Lokesh Gaikwad</h5>
+                                <p class="text-muted">Sent a post by Naval</p>
+                            </div>
+                        </div>
+
+                       
+
+                        <!-------------------MESSAGE-2---------------------------------->
+                        <div class="message">
+                            <div class="profile-picture">
+                                <img src="./Images/Uddhav Joshi.jpg">
+                            </div>
+
+                            <div class="message-body">
+                                <h5>Uddhav Joshi</h5>
+                                <p class="text-bold">Shared a video</p>
+                            </div>
+                        </div>
+
+
+                        <!-------------------MESSAGE-3---------------------------------->
+                        <div class="message">
+                            <div class="profile-picture">
+                                <img src="./Images/tech.png">
+                                <div class="active"></div>
+                            </div>
+
+                            <div class="message-body">
+                                <h5>Anom Warbhuvan</h5>
+                                <p class="text-bold">3 new messages</p>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+
+                    
+                    <!--------------------MESSAGE END------------------------->
+
+                    <!---------------------Recommended---------------------------->
+                    <div class="recommended">
+                        <h4>Recommended</h4>
+
+                        <!-------------------Recommendation-1------------------------->
+                        <div class="recommendation">
+                            <div class="info">
+                                <div class="profile-picture">
+                                    <img src="./Images/creator.png">
+                                </div>
+                                <div>
+                                    <h5>Confused Soul</h5>
+                                    <p class="text-muted">
+                                        followed by 8 friends
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="action">
+                                <button class="btn btn-primary">
+                                    Follow
+                                </button>
+
+                                <button class="btn">
+                                    Remove
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-------------------Recommendation-2------------------------->
+                        <div class="recommendation">
+                            <div class="info">
+                                <div class="profile-picture">
+                                    <img src="./Images/tech.png">
+                                </div>
+                                <div>
+                                    <h5>Anom Warbhuvan</h5>
+                                    <p class="text-muted">
+                                        followed by 20 friends
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="action">
+                                <button class="btn btn-primary">
+                                    Follow
+                                </button>
+
+                                <button class="btn">
+                                    Remove
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-------------------END OF RIGHT COLUMN--------------------->
+            </div>
+        </main>
+
+        <script src="./index.js"></script>
+    </body>
+
+</html>
